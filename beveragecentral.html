@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link type="text/css" rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="animate.css" />
+  <title>Pauls Business Website</title>
+</head>
+
+<body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <ul class="nav navbar-nav nav-bar-left">
+        <li><a href="#bevcentral" class="ntext">Beverage Central</a></li>
+        <li><a href="#mission" class="ntext">Mission</a></li>
+        <li><a href="#about" class="ntext">About</a></li>
+        <li><a href="#products" class="ntext">Products</a></li>
+        <li><a href="#contact" class="ntext">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="sect sectOne fadeIn animated">
+        <h1 class="bounceIn animated" id="bevcentral">Welcome to Beverage Central</h1></div>
+      <div class="subSection" id="mission">
+        <h1>Our Mission</h1><br>
+        <p>Our mission is to provide coffee, wine, and craft beer<br> supplies as well as the opportunity to just hang out<br> and sample our selection of coffee, wine, and craft beer.<br>  Our service is second to none.  So stop on by<br> and find out all the wonderful beverages you could be drinking!</p>
+      </div>
+      <div class="sect sectTwo">Section 2</div>
+      <div class="subSection" id="about">
+        <h1>About</h1>
+        <p>At Beverage Central<br>  We strive to provide you with all supplies and accessories that we feel are necessary to enjoy coffee, wine, and craft beer.<br>  We also have a "Sampling Room" where you can relax and enjoy any of the beverages that we provide in an awesome environment!</p>
+      </div>
+      <div class="sect sectThree">Section 3</div>
+      <div class="subSection" id="products">
+        <h1>Products</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure<br> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="sect sectFour"></div>
+      <div class="subSection" id="contact">
+        <h1>Contact</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure<br> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('a[href*="#"]').on('click', function(e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').animate({
+        'scrollTop': $target.offset().top
+      }, 1000, 'swing', function() {
+        window.location.hash = target;
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>

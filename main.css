@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+}
+html body {
+  height: 100%;
+  background-color: tan
+}
+.navbar {
+  background-color: black;
+  opacity: 0.7;
+  border: 10px solid black;
+  color: white;
+}
+.ntext {
+color: white;
+font-size: 1.6em;
+font-family: cursive;
+padding-left: 10px;
+float:left;
+}
+.ntext:hover {
+  background-color: white;
+  color: black;
+  transition-duration: 0.5s;
+}
+.sect{
+  height: 600px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.sect h1 {
+  margin-top: 0;
+  padding-top: 60px;
+  text-align: center;
+  font-family: cursive;
+  color: tan;
+  text-shadow: 0 0 150px red;
+}
+.subSection {
+  height: 300px;
+  background-color: white;
+  text-align: center;
+  font-size: 1.3em;
+  overflow: transparent;
+}
+.subSection h1 {
+  margin-top: 0;
+  text-align: center;
+  padding-top: 60px;
+}
+.sectOne {
+background-image: url("http://www.gunaxin.com/wp-content/uploads/2017/04/coffee.jpg");
+}
+.sectTwo {
+background-image: url("https://houston.eat24hours.com/files/cuisines/v4/wine.jpg");
+}
+.sectThree {
+background-image: url("http://cdn.phillymag.com/wp-content/uploads/sites/3/2014/11/Craft-Beer.jpg");
+}
+.sectFour {
+  background-image: url("https://img.grouponcdn.com/deal/2rnojKQzDNjHFftgTv4e/yn-2048x1229/v1/c700x420.jpg");
+}
